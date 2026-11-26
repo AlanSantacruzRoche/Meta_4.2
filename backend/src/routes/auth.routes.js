@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { login, register, me, logout, googleLogin, googleCallback } from '../controllers/auth.controller.js';
+import { authenticateJWT, verifyCsrf } from '../middleware/admin.js';
+const router = Router();
+router.get('/google/login', googleLogin);
+router.get('/google/callback', googleCallback);
+router.post('/login', login);
+router.post('/register', register);
+router.get('/me', authenticateJWT, me);
+router.post('/logout', authenticateJWT, verifyCsrf, logout);
+export default router;

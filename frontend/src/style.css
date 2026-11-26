@@ -1,0 +1,33 @@
+html { overflow-y: auto; }
+body { margin: 0; background: #f5f6f8; }
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #6750a4;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.login-shell {
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+.stat-card { border: 1px solid #e6e8ee; }
+.table-wrap { width: 100%; overflow-x: auto; }
+.players-table { width: 100%; min-width: 620px; border-collapse: collapse; }
+.players-table th,
+.players-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e6e8ee;
+  text-align: left;
+}
+.players-table th { color: #687386; font-size: 12px; font-weight: 600; }
+.players-table tbody tr:hover { background: #fafafa; }
+
+.landing-page { min-height: 100vh; background: #f5f6f8; }
+.app-sidebar { top: 64px !important; height: calc(100vh - 64px) !important; border-right: 1px solid #e6e8ee; }
+.app-main { background: #f5f6f8; min-height: calc(100vh - 64px); }
+.v-navigation-drawer .v-list-item--active { font-weight: 700; }
